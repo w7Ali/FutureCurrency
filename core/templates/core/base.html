@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock title %}</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/corecss.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+
+
+    {% block corecss %}
+    <link rel="stylesheet" href="{% static 'core/css/corecss.css' %}">
+    {% endblock corecss %}
+
+</head>
+<body style="background-color: white; color: black;">
+<h2 class="text-center text-white bg-danger mb-0 p-3">Future Currency </h2>
+
+{% block sidebar %}
+
+<div class="container-fluid bg-blue d-flex flex-column min-vh-100">
+
+    <div class="row flex-grow-1">
+        <div class="col-sm-2 justify-content-center ps-0" style="padding-left: 0">
+            {% include 'core/sidebar.html' %}
+        </div>
+        <div class="col-sm-10">
+            {% block content %} {% endblock content %}
+        </div>
+    </div>
+</div>
+
+
+    <script src="{% static 'core/js/jquery.js' %}"></script>
+    <script src="{% static 'core/js/popper.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.js' %}"></script>
+    <script src="{% static 'core/js/all.min.js' %}"></script>
+{% endblock sidebar %}
+</body>
+</html>

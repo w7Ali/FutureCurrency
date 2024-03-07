@@ -1,0 +1,38 @@
+<!-- your_app/templates/your_app/expense_list.html -->
+{% extends 'core/base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h2>Expense List</h2>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Amount</th>
+          <th scope="col">Category</th>
+          <th scope="col">Description</th>
+          <th scope="col">Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for expense in expenses %}
+          <tr>
+            <td>{{ expense.amount }}</td>
+            <td>{{ expense.category }}</td>
+            <td>{{ expense.description }}</td>
+            <td>{{ expense.date }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h2>Add New Expense</h2>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <a href="{% url 'expense_list' %}" class="btn btn-secondary">Back to List</a>
+  </div>
+{% endblock %}

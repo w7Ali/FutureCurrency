@@ -1,0 +1,64 @@
+{% extends 'core/base.html' %}
+{% block title %}Income Home{% endblock %}
+{% block content %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Income</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Create Income</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ income_form.as_p }}
+                <button type="button" class="btn btn-info btn-sm mt-1" id="enableRecurringBtn">Enable Recurring Income</button>
+                <div id="recurringForm" style="display: none;">
+                    {{ recurring_income_form.as_p }}
+                    <input type="hidden" name="recurring" value="False" id="recurringInput">
+                    <button type="button" class="btn btn-success btn-sm mt-1" id="enableVariedRecurringBtn">Enable Varied Recurring Income</button>
+                    <div id="variedRecurringForm" style="display: none;">
+                        {{ varied_recurring_income_form.as_p }}
+                        <input type="hidden" name="varied" value="False" id="variedInput">
+                    </div>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var recurringForm = document.getElementById('recurringForm');
+            var variedRecurringForm = document.getElementById('variedRecurringForm');
+            var enableRecurringBtn = document.getElementById('enableRecurringBtn');
+            var enableVariedRecurringBtn = document.getElementById('enableVariedRecurringBtn');
+            var recurringInput = document.getElementById('recurringInput');
+            var variedInput = document.getElementById('variedInput');
+
+            enableRecurringBtn.addEventListener('click', function () {
+                recurringForm.style.display = 'block';
+                enableRecurringBtn.disabled = true;
+                recurringInput.value = 'True';
+            });
+
+            enableVariedRecurringBtn.addEventListener('click', function () {
+                variedRecurringForm.style.display = 'block';
+                enableVariedRecurringBtn.disabled = true;
+                variedInput.value = 'True';
+            });
+        });
+    </script>
+</div>
+
+</body>
+</html>
+{% endblock content %}

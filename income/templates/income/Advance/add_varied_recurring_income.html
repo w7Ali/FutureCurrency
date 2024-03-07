@@ -1,0 +1,16 @@
+ 
+<!-- core/templates/core/add_varied_recurring_income.html -->
+{% extends 'core/base.html' %}
+
+{% block title %}Add Varied Recurring Income{% endblock %}
+
+{% block content %}
+    <h2>Add Varied Recurring Income for {{ recurring_income.income.source }}</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="submit">Submit</button>
+    </form>
+
+    <a href="{% url 'IncomeHome' %}">Back to Detail</a>
+{% endblock content %}

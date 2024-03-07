@@ -1,0 +1,57 @@
+<!-- emi/emi_detail.html -->
+{% extends 'core/base.html' %}
+{% block content %}
+
+  <h2>{{ emi.product_name }} - EMI Detail</h2>
+
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <th scope="row">Down Payment</th>
+        <td>{{ emi.down_payment }}</td>
+      </tr>
+      <tr>
+        <th scope="row">EMI Amount</th>
+        <td>{{ emi.emi_amount }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Start Date</th>
+        <td>{{ emi.start_date }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Due Date</th>
+        <td>{{ emi.due_date }}</td>
+      </tr>
+      <tr>
+        <th scope="row">EMI Count</th>
+        <td>{{ emi.emi_count }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Interest Percent</th>
+        <td>{{ emi.interest_percent }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Paid Amount</th>
+        <td>{{ emi.emibalance.paid_amount }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Remaining EMIs</th>
+        <td>{{ emi.emibalance.remaining_emis }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Pending Amount</th>
+        <td>{{ emi.emibalance.pending_amount }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Total Amount</th>
+        <td>{{ emi.emibalance.total_amount }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="btn-group" role="group" aria-label="EMI Actions">
+    <a href="{% url 'emi_update' pk=emi.pk %}" class="btn btn-warning">Edit</a>
+    <a href="{% url 'emi_delete' pk=emi.pk %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'expense-home' %}" class="btn btn-primary">Back to List</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,1502 @@
+[
+  {
+    "model": "expenses.expense",
+    "pk": 1,
+    "fields": {
+      "name": "you",
+      "amount": 1500,
+      "category": "attack",
+      "description": "Save case best.",
+      "date": "2024-02-08"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 2,
+    "fields": {
+      "name": "happy",
+      "amount": 3100,
+      "category": "wish",
+      "description": "Itself over commercial maintain develop same.",
+      "date": "2024-01-31"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 3,
+    "fields": {
+      "name": "bag",
+      "amount": 4400,
+      "category": "notice",
+      "description": "Form support nor scene.",
+      "date": "2024-02-07"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 4,
+    "fields": {
+      "name": "couple",
+      "amount": 7600,
+      "category": "agent",
+      "description": "Stuff operation sport cultural ask public.",
+      "date": "2024-01-25"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 5,
+    "fields": {
+      "name": "us",
+      "amount": 7200,
+      "category": "debate",
+      "description": "Difficult adult whose hair hope including identify tend.",
+      "date": "2024-02-04"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 6,
+    "fields": {
+      "name": "third",
+      "amount": 5000,
+      "category": "mother",
+      "description": "Line agreement wrong place.",
+      "date": "2024-02-02"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 7,
+    "fields": {
+      "name": "have",
+      "amount": 4900,
+      "category": "sell",
+      "description": "Including today cover they member.",
+      "date": "2024-02-02"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 8,
+    "fields": {
+      "name": "answer",
+      "amount": 7400,
+      "category": "possible",
+      "description": "Point save fast clear.",
+      "date": "2024-01-29"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 9,
+    "fields": {
+      "name": "trip",
+      "amount": 2500,
+      "category": "recognize",
+      "description": "Year anyone half anyone question.",
+      "date": "2024-02-14"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 10,
+    "fields": {
+      "name": "drive",
+      "amount": 4900,
+      "category": "glass",
+      "description": "Safe cut network way hand sometimes eye.",
+      "date": "2024-01-30"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 11,
+    "fields": {
+      "name": "let",
+      "amount": 100,
+      "category": "debate",
+      "description": "Society bag over exactly.",
+      "date": "2024-02-01"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 12,
+    "fields": {
+      "name": "fine",
+      "amount": 2300,
+      "category": "total",
+      "description": "I company every happen though major drug lot.",
+      "date": "2024-01-20"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 13,
+    "fields": {
+      "name": "owner",
+      "amount": 9000,
+      "category": "knowledge",
+      "description": "Energy stand effect fast director night.",
+      "date": "2024-01-25"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 14,
+    "fields": {
+      "name": "coach",
+      "amount": 2500,
+      "category": "development",
+      "description": "Morning child dream air nation main.",
+      "date": "2024-02-16"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 15,
+    "fields": {
+      "name": "system",
+      "amount": 2700,
+      "category": "they",
+      "description": "Base less another type eight another catch.",
+      "date": "2024-01-27"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 16,
+    "fields": {
+      "name": "medical",
+      "amount": 4300,
+      "category": "magazine",
+      "description": "For whom party what especially office.",
+      "date": "2024-02-05"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 17,
+    "fields": {
+      "name": "mother",
+      "amount": 7400,
+      "category": "hundred",
+      "description": "Central sport during treat rock child recent.",
+      "date": "2024-02-04"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 18,
+    "fields": {
+      "name": "customer",
+      "amount": 4100,
+      "category": "project",
+      "description": "Hundred real pressure audience successful medical.",
+      "date": "2024-02-01"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 19,
+    "fields": {
+      "name": "dark",
+      "amount": 3300,
+      "category": "teach",
+      "description": "Call it early college four on.",
+      "date": "2024-01-22"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 20,
+    "fields": {
+      "name": "bag",
+      "amount": 1800,
+      "category": "west",
+      "description": "Stand color happy believe market.",
+      "date": "2024-01-23"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 21,
+    "fields": {
+      "name": "reason",
+      "amount": 6700,
+      "category": "bed",
+      "description": "Drug next seven evidence produce argue high.",
+      "date": "2024-01-19"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 22,
+    "fields": {
+      "name": "hotel",
+      "amount": 7300,
+      "category": "into",
+      "description": "Forward law add.",
+      "date": "2024-02-11"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 23,
+    "fields": {
+      "name": "agency",
+      "amount": 1700,
+      "category": "yet",
+      "description": "Expert body decision run south win dark run.",
+      "date": "2024-02-12"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 24,
+    "fields": {
+      "name": "total",
+      "amount": 2400,
+      "category": "room",
+      "description": "Factor local leg.",
+      "date": "2024-02-15"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 25,
+    "fields": {
+      "name": "standard",
+      "amount": 5900,
+      "category": "goal",
+      "description": "Any political expert certain.",
+      "date": "2024-01-24"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 26,
+    "fields": {
+      "name": "less",
+      "amount": 6500,
+      "category": "individual",
+      "description": "Want list form create.",
+      "date": "2024-01-28"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 27,
+    "fields": {
+      "name": "her",
+      "amount": 1100,
+      "category": "be",
+      "description": "Safe receive whether ready over accept little.",
+      "date": "2024-02-07"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 28,
+    "fields": {
+      "name": "these",
+      "amount": 4400,
+      "category": "western",
+      "description": "Resource consider agreement least nature.",
+      "date": "2024-01-20"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 29,
+    "fields": {
+      "name": "usually",
+      "amount": 4500,
+      "category": "manager",
+      "description": "Suffer service enjoy for.",
+      "date": "2024-02-03"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 30,
+    "fields": {
+      "name": "produce",
+      "amount": 9900,
+      "category": "look",
+      "description": "Soon son life local.",
+      "date": "2024-02-08"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 31,
+    "fields": {
+      "name": "tonight",
+      "amount": 1300,
+      "category": "wish",
+      "description": "Story fight indicate suffer past police.",
+      "date": "2024-01-23"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 32,
+    "fields": {
+      "name": "stand",
+      "amount": 6500,
+      "category": "open",
+      "description": "Record travel sometimes sport after consumer piece.",
+      "date": "2024-01-20"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 33,
+    "fields": {
+      "name": "still",
+      "amount": 9700,
+      "category": "individual",
+      "description": "Sort article eye reality design resource tree wind.",
+      "date": "2024-01-18"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 34,
+    "fields": {
+      "name": "them",
+      "amount": 1700,
+      "category": "notice",
+      "description": "Produce professional our number east institution sport pressure.",
+      "date": "2024-02-07"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 35,
+    "fields": {
+      "name": "professional",
+      "amount": 7400,
+      "category": "stay",
+      "description": "Myself professional catch.",
+      "date": "2024-02-07"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 36,
+    "fields": {
+      "name": "husband",
+      "amount": 600,
+      "category": "anyone",
+      "description": "Month reality cultural need.",
+      "date": "2024-02-03"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 37,
+    "fields": {
+      "name": "politics",
+      "amount": 9900,
+      "category": "church",
+      "description": "Tend executive media audience for east.",
+      "date": "2024-02-07"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 38,
+    "fields": {
+      "name": "fall",
+      "amount": 9600,
+      "category": "less",
+      "description": "Class use writer whom fund offer.",
+      "date": "2024-01-22"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 39,
+    "fields": {
+      "name": "suggest",
+      "amount": 9200,
+      "category": "person",
+      "description": "Hear table require sea someone statement.",
+      "date": "2024-01-22"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 40,
+    "fields": {
+      "name": "teacher",
+      "amount": 9500,
+      "category": "more",
+      "description": "Center however air every move person piece.",
+      "date": "2024-02-15"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 41,
+    "fields": {
+      "name": "without",
+      "amount": 4000,
+      "category": "avoid",
+      "description": "Nearly meet public property type loss point.",
+      "date": "2024-01-21"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 42,
+    "fields": {
+      "name": "gas",
+      "amount": 3500,
+      "category": "score",
+      "description": "Pay throughout benefit.",
+      "date": "2024-01-21"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 43,
+    "fields": {
+      "name": "would",
+      "amount": 5700,
+      "category": "possible",
+      "description": "Choice wide always outside indeed by subject.",
+      "date": "2024-02-02"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 44,
+    "fields": {
+      "name": "writer",
+      "amount": 3000,
+      "category": "office",
+      "description": "Kid outside situation.",
+      "date": "2024-02-16"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 45,
+    "fields": {
+      "name": "community",
+      "amount": 6800,
+      "category": "professional",
+      "description": "Wish analysis structure local example office method born.",
+      "date": "2024-01-29"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 46,
+    "fields": {
+      "name": "public",
+      "amount": 7000,
+      "category": "positive",
+      "description": "Send above assume son military north answer.",
+      "date": "2024-02-15"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 47,
+    "fields": {
+      "name": "billion",
+      "amount": 8900,
+      "category": "activity",
+      "description": "President because trip shake stay nearly of.",
+      "date": "2024-02-15"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 48,
+    "fields": {
+      "name": "to",
+      "amount": 4200,
+      "category": "real",
+      "description": "Across point ok blue despite occur involve late.",
+      "date": "2024-02-06"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 49,
+    "fields": {
+      "name": "ok",
+      "amount": 7600,
+      "category": "so",
+      "description": "Investment open leg like author difference democratic its.",
+      "date": "2024-01-20"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 50,
+    "fields": {
+      "name": "describe",
+      "amount": 8000,
+      "category": "mention",
+      "description": "Current rate majority successful support.",
+      "date": "2024-01-29"
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 1,
+    "fields": {
+      "amount": 25000,
+      "source": "ask",
+      "description": "Last his property paper top hospital.",
+      "day_of_month": 9
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 2,
+    "fields": {
+      "amount": 41000,
+      "source": "join",
+      "description": "Writer whole challenge degree wide already.",
+      "day_of_month": 16
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 3,
+    "fields": {
+      "amount": 47000,
+      "source": "agency",
+      "description": "Writer on drug sound light none theory.",
+      "day_of_month": 24
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 4,
+    "fields": {
+      "amount": 36000,
+      "source": "build",
+      "description": "About past one especially.",
+      "day_of_month": 10
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 5,
+    "fields": {
+      "amount": 33000,
+      "source": "wall",
+      "description": "Eat even need director.",
+      "day_of_month": 12
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 6,
+    "fields": {
+      "amount": 4000,
+      "source": "hour",
+      "description": "Clear figure detail budget leave use.",
+      "day_of_month": 25
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 7,
+    "fields": {
+      "amount": 46000,
+      "source": "open",
+      "description": "Think role issue alone glass.",
+      "day_of_month": 20
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 8,
+    "fields": {
+      "amount": 30000,
+      "source": "someone",
+      "description": "Move fight assume area of change.",
+      "day_of_month": 28
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 9,
+    "fields": {
+      "amount": 23000,
+      "source": "various",
+      "description": "Somebody last participant send less recognize if.",
+      "day_of_month": 28
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 10,
+    "fields": {
+      "amount": 10000,
+      "source": "despite",
+      "description": "Teacher Democrat accept.",
+      "day_of_month": 16
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 11,
+    "fields": {
+      "amount": 10000,
+      "source": "goal",
+      "description": "Drug usually yeah picture whose environment relate.",
+      "day_of_month": 20
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 12,
+    "fields": {
+      "amount": 19000,
+      "source": "probably",
+      "description": "Probably peace assume data believe decide word.",
+      "day_of_month": 28
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 13,
+    "fields": {
+      "amount": 33000,
+      "source": "value",
+      "description": "Well happen professor practice foreign.",
+      "day_of_month": 26
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 14,
+    "fields": {
+      "amount": 10000,
+      "source": "day",
+      "description": "Happen despite idea year something let.",
+      "day_of_month": 10
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 15,
+    "fields": {
+      "amount": 20000,
+      "source": "school",
+      "description": "Artist hospital the health Democrat.",
+      "day_of_month": 5
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 16,
+    "fields": {
+      "amount": 39000,
+      "source": "also",
+      "description": "Later push candidate hundred culture easy.",
+      "day_of_month": 2
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 17,
+    "fields": {
+      "amount": 33000,
+      "source": "foreign",
+      "description": "Home add order them director.",
+      "day_of_month": 13
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 18,
+    "fields": {
+      "amount": 36000,
+      "source": "Democrat",
+      "description": "Every house health resource fact energy.",
+      "day_of_month": 20
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 19,
+    "fields": {
+      "amount": 11000,
+      "source": "four",
+      "description": "Especially whose seem real nature life.",
+      "day_of_month": 1
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 20,
+    "fields": {
+      "amount": 42000,
+      "source": "least",
+      "description": "Our staff because similar.",
+      "day_of_month": 25
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 21,
+    "fields": {
+      "amount": 22000,
+      "source": "sit",
+      "description": "Writer off court outside you last.",
+      "day_of_month": 5
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 22,
+    "fields": {
+      "amount": 12000,
+      "source": "feel",
+      "description": "Audience civil his hot stuff.",
+      "day_of_month": 2
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 23,
+    "fields": {
+      "amount": 49000,
+      "source": "add",
+      "description": "Record trade good whose least.",
+      "day_of_month": 26
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 24,
+    "fields": {
+      "amount": 5000,
+      "source": "police",
+      "description": "Force glass yourself thing arrive several.",
+      "day_of_month": 3
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 25,
+    "fields": {
+      "amount": 10000,
+      "source": "bad",
+      "description": "Hand opportunity because require we.",
+      "day_of_month": 25
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 26,
+    "fields": {
+      "amount": 22000,
+      "source": "would",
+      "description": "Manage thus fast hard clearly affect you.",
+      "day_of_month": 19
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 27,
+    "fields": {
+      "amount": 10000,
+      "source": "dog",
+      "description": "Nation green imagine stop medical.",
+      "day_of_month": 24
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 28,
+    "fields": {
+      "amount": 46000,
+      "source": "often",
+      "description": "Factor perform human area any rise realize.",
+      "day_of_month": 11
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 29,
+    "fields": {
+      "amount": 3000,
+      "source": "music",
+      "description": "Quality according laugh more else east.",
+      "day_of_month": 1
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 30,
+    "fields": {
+      "amount": 12000,
+      "source": "many",
+      "description": "Bag something seven institution work institution.",
+      "day_of_month": 18
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 31,
+    "fields": {
+      "amount": 41000,
+      "source": "service",
+      "description": "Mention available tax risk cup officer authority.",
+      "day_of_month": 14
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 32,
+    "fields": {
+      "amount": 4000,
+      "source": "day",
+      "description": "Decide guess those career bit once.",
+      "day_of_month": 24
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 33,
+    "fields": {
+      "amount": 15000,
+      "source": "chair",
+      "description": "So system score we main break too.",
+      "day_of_month": 28
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 34,
+    "fields": {
+      "amount": 42000,
+      "source": "apply",
+      "description": "Degree so mouth again Mr decide she.",
+      "day_of_month": 28
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 35,
+    "fields": {
+      "amount": 23000,
+      "source": "public",
+      "description": "Along fear standard sense.",
+      "day_of_month": 17
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 36,
+    "fields": {
+      "amount": 42000,
+      "source": "mission",
+      "description": "Present memory nor eight.",
+      "day_of_month": 16
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 37,
+    "fields": {
+      "amount": 23000,
+      "source": "lay",
+      "description": "Girl bank hear determine keep.",
+      "day_of_month": 9
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 38,
+    "fields": {
+      "amount": 22000,
+      "source": "service",
+      "description": "Evening difference into practice.",
+      "day_of_month": 12
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 39,
+    "fields": {
+      "amount": 29000,
+      "source": "feeling",
+      "description": "Individual grow dream.",
+      "day_of_month": 24
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 40,
+    "fields": {
+      "amount": 22000,
+      "source": "oil",
+      "description": "Movement base figure recently card behavior.",
+      "day_of_month": 11
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 41,
+    "fields": {
+      "amount": 36000,
+      "source": "style",
+      "description": "Economic now black property defense draw group.",
+      "day_of_month": 25
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 42,
+    "fields": {
+      "amount": 19000,
+      "source": "technology",
+      "description": "Decision mother computer pick good.",
+      "day_of_month": 5
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 43,
+    "fields": {
+      "amount": 45000,
+      "source": "bad",
+      "description": "Be natural poor wish.",
+      "day_of_month": 25
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 44,
+    "fields": {
+      "amount": 6000,
+      "source": "or",
+      "description": "Sort cover around whether.",
+      "day_of_month": 13
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 45,
+    "fields": {
+      "amount": 29000,
+      "source": "money",
+      "description": "Certain key majority full.",
+      "day_of_month": 7
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 46,
+    "fields": {
+      "amount": 14000,
+      "source": "daughter",
+      "description": "Fish condition senior star growth article.",
+      "day_of_month": 6
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 47,
+    "fields": {
+      "amount": 12000,
+      "source": "phone",
+      "description": "Voice candidate ground hear book appear.",
+      "day_of_month": 20
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 48,
+    "fields": {
+      "amount": 24000,
+      "source": "talk",
+      "description": "A it million bit.",
+      "day_of_month": 6
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 49,
+    "fields": {
+      "amount": 12000,
+      "source": "know",
+      "description": "Site civil water eight color federal western.",
+      "day_of_month": 23
+    }
+  },
+  {
+    "model": "income.income",
+    "pk": 50,
+    "fields": {
+      "amount": 14000,
+      "source": "identify",
+      "description": "Method old perhaps remain early.",
+      "day_of_month": 13
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 1,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 4,
+      "recurring_range": 12
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 2,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 28,
+      "recurring_range": 12
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 3,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 11,
+      "recurring_range": 10
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 4,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 26,
+      "recurring_range": 11
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 5,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 6,
+      "recurring_range": 12
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 6,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 7,
+      "recurring_range": 4
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 7,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 1,
+      "recurring_range": 6
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 8,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 27,
+      "recurring_range": 3
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 9,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 19,
+      "recurring_range": 6
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 10,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 24,
+      "recurring_range": 3
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 11,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 20,
+      "recurring_range": 7
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 12,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 10,
+      "recurring_range": 10
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 13,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 18,
+      "recurring_range": 8
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 14,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 3,
+      "recurring_range": 1
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 15,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 7,
+      "recurring_range": 9
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 16,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 16,
+      "recurring_range": 9
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 17,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 20,
+      "recurring_range": 1
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 18,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 14,
+      "recurring_range": 6
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 19,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 23,
+      "recurring_range": 11
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 20,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 6,
+      "recurring_range": 2
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 21,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 4,
+      "recurring_range": 2
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 22,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 4,
+      "recurring_range": 3
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 23,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 28,
+      "recurring_range": 8
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 24,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 12,
+      "recurring_range": 5
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 25,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 27,
+      "recurring_range": 12
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 26,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 9,
+      "recurring_range": 9
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 27,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 7,
+      "recurring_range": 12
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 28,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 3,
+      "recurring_range": 5
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 29,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 26,
+      "recurring_range": 4
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 30,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 20,
+      "recurring_range": 1
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 31,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 16,
+      "recurring_range": 9
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 32,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 4,
+      "recurring_range": 3
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 33,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 22,
+      "recurring_range": 12
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 34,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 6,
+      "recurring_range": 1
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 35,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 11,
+      "recurring_range": 10
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 36,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 26,
+      "recurring_range": 12
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 37,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 15,
+      "recurring_range": 11
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 38,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 27,
+      "recurring_range": 10
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 39,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 27,
+      "recurring_range": 9
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 40,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 20,
+      "recurring_range": 11
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 41,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 13,
+      "recurring_range": 5
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 42,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 23,
+      "recurring_range": 10
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 43,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 2,
+      "recurring_range": 1
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 44,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 12,
+      "recurring_range": 5
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 45,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 2,
+      "recurring_range": 12
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 46,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 11,
+      "recurring_range": 12
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 47,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 14,
+      "recurring_range": 7
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 48,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 8,
+      "recurring_range": 1
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 49,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 26,
+      "recurring_range": 5
+    }
+  },
+  {
+    "model": "income.recurringincome",
+    "pk": 50,
+    "fields": {
+      "recurring_type": "M",
+      "recurring_day": 13,
+      "recurring_range": 1
+    }
+  }
+]

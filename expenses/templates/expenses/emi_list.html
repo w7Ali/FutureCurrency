@@ -1,0 +1,34 @@
+<!-- emi/emi_list.html -->
+{% extends 'core/base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h2>EMI List</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Product Name</th>
+          <th scope="col">EMI Amount</th>
+          <th scope="col">Due Date</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for emi in emis %}
+          <tr>
+            <td>{{ emi.product_name }}</td>
+            <td>{{ emi.emi_amount }}</td>
+            <td>{{ emi.due_date }}</td>
+            <td>
+              <a href="{% url 'emi_detail' pk=emi.pk %}" class="btn btn-primary btn-sm">Details</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="{% url 'emi_create' %}" class="btn btn-success">Add New EMI</a>
+  </div>
+{% endblock %}
+
+
+

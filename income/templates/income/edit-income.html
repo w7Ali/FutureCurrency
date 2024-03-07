@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{% if is_edit %}Edit Income{% else %}Add Income{% endif %}{% endblock %}
+
+{% block content %}
+<div>
+    <h2 class="text-center alert alert-info">{% if is_edit %}Edit Income{% else %}Add Income{% endif %}</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="submit" class="btn btn-primary ">Submit</button>
+    </form>
+    <div class="btn-group mt-2">
+    <a href="{% url 'income-home' %}" class="btn btn-dark">Back to Detail</a>
+    </div>
+</div>
+
+{% endblock content %}

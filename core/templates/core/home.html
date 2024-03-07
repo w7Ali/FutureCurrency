@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Home - Your Finance Hub{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 mt-10">
+            <h1>Welcome to Your Finance Hub</h1>
+            <p>Empowering Your Financial Success</p>
+
+            <p>At Your Finance Hub, we understand that financial well-being is a crucial aspect of a fulfilling life. Whether you are planning for the future, navigating major life events, or seeking to optimize your investments, we are here to guide you on your financial journey.</p>
+
+            <h2>Financial Tips</h2>
+            <ul>
+                <li><strong>Set Clear Goals:</strong> Define your short and long-term financial goals to create a roadmap for success.</li>
+                <li><strong>Budget Wisely:</strong> Create a realistic budget to manage your expenses and save for the future.</li>
+                <li><strong>Diversify Investments:</strong> Spread your investments across different assets to reduce risk and enhance returns.</li>
+                <li><strong>Emergency Fund:</strong> Build an emergency fund to handle unexpected expenses and financial challenges.</li>
+                <li><strong>Stay Informed:</strong> Keep yourself updated on financial news and trends to make informed decisions.</li>
+            </ul>
+
+            <h2>Financial Quotes</h2>
+            <blockquote>
+                <p>"The stock market is designed to transfer money from the active to the patient." - Warren Buffett</p>
+            </blockquote>
+            <blockquote>
+                <p>"A budget is telling your money where to go instead of wondering where it went." - Dave Ramsey</p>
+            </blockquote>
+            <blockquote>
+                <p>"The best investment you can make is in yourself." - Warren Buffett</p>
+            </blockquote>
+
+            <h2>Our Services</h2>
+            <p>Explore our range of financial services designed to meet your unique needs:</p>
+            <!-- Add your services list here -->
+
+            <h2>Why Choose Us?</h2>
+            <p>Our team of experienced financial professionals is dedicated to providing personalized, transparent, and reliable services. We believe in building lasting relationships with our clients based on trust and integrity.</p>
+
+            <p>Ready to take control of your financial future? Connect with us today and let's embark on this journey together.</p>
+            {{user_details}}
+                        <!-- Change Password Button with Font Awesome icon -->
+            <a href="{% url 'reset' %}" class="btn btn-secondary">
+                <i class="fas fa-key"></i> Change Password
+            </a>
+
+            <a href="{% url 'signup' %}" class="btn btn-primary">Get in Touch</a>
+            <a href="{% url 'logout' %}" class="btn btn-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

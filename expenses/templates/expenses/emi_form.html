@@ -1,0 +1,33 @@
+<!-- emi/emi_form.html -->
+{% extends 'core/base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h2>{{ action }} EMI</h2>
+    <form method="post" enctype="multipart/form-data" class="my-4">
+      {% csrf_token %}
+
+      {% for field in form %}
+        <div class="row mb-3">
+          <div class="col-md-6">
+            {{ field.label_tag }}
+          </div>
+          <div class="col-md-6">
+            {{ field }}
+            {% if field.help_text %}
+              <small class="form-text text-muted">{{ field.help_text }}</small>
+            {% endif %}
+            {% if field.errors %}
+              {% for error in field.errors %}
+                <div class="invalid-feedback">{{ error }}</div>
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <a href="{% url 'expense-home' %}" class="btn btn-secondary">Back to List</a>
+  </div>
+{% endblock %}

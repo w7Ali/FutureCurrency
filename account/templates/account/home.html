@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Account Details{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'income/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'income/css/jquery-tables.css' %}">
+<link rel="stylesheet" href="{% static 'income/css/homefinal.css' %}">
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Account Details</h5>
+        </div>
+        <div class="card-body">
+            {% for account in accounts %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="{% url 'account-detail' account.id %}" class="card-title">{{ account.account_name|title}}</a>
+                        <p class="card-text">Account Number: {{ account.account_number }}</p>
+                        <p class="card-text">Balance: ${{ account.balance }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <a href="{% url 'add-account' %}" class="btn btn-danger">Add Account</a>
+
+        </div>
+        {% comment %} <a href="{% url 'add-account' %}" class="btn btn-danger">Add Account</a> {% endcomment %}
+
+    </div>
+    {% for user in userlist %}
+    {{user.name}}
+    {% endfor %}
+</div>
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/datatables.js' %}"></script>
+<script src="{% static 'income/js/home.js' %}"></script>
+
+{% endblock %}

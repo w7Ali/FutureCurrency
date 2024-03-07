@@ -1,0 +1,125 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Dashboard - Your Finance Hub{% endblock %}
+
+{% block content %}
+<style>
+    /* Add custom styles for the dashboard */
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-weight: bold;
+        color: #495057;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #007bff;
+    }
+
+    .card {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        color: #343a40;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .card-text {
+        font-size: 1.2rem;
+        color: #495057;
+        text-align: left;
+        line-height: 1.8;
+    }
+
+    .card-text strong {
+        font-weight: bold;
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Welcome {{ user_details.first_name |title}} {{ user_details.last_name |title}} </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'reset' %}">
+                        <i class="fas fa-key"></i> Change Password
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'edit-profile' %}">
+                        <i class="fas fa-edit"></i> Edit User Detail
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+          <h1>Welcome to Your Finance Hub</h1>
+            <p>Empowering Your Financial Success</p>
+
+            <p>At Your Finance Hub, we understand that financial well-being is a crucial aspect of a fulfilling life. Whether you are planning for the future, navigating major life events, or seeking to optimize your investments, we are here to guide you on your financial journey.</p>
+
+            <h2>Financial Tips</h2>
+            <ul>
+                <li><strong>Set Clear Goals:</strong> Define your short and long-term financial goals to create a roadmap for success.</li>
+                <li><strong>Budget Wisely:</strong> Create a realistic budget to manage your expenses and save for the future.</li>
+                <li><strong>Diversify Investments:</strong> Spread your investments across different assets to reduce risk and enhance returns.</li>
+                <li><strong>Emergency Fund:</strong> Build an emergency fund to handle unexpected expenses and financial challenges.</li>
+                <li><strong>Stay Informed:</strong> Keep yourself updated on financial news and trends to make informed decisions.</li>
+            </ul>
+
+            <h2>Why Choose Us?</h2>
+            <p>Our team of experienced financial professionals is dedicated to providing personalized, transparent, and reliable services. We believe in building lasting relationships with our clients based on trust and integrity.</p>
+
+            <p>Ready to take control of your financial future? Connect with us today and let's embark on this journey together.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="card transparent-card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ user_details.username |title}}</h5>
+                    <p class="card-text">
+                        <strong>Name</strong> {{ user_details.first_name |title}} {{ user_details.last_name |title}}<br>
+                        <strong>Email</strong> {{ user_details.email }}
+                        <strong>Joined</strong> {{ user_details.date_joined }}
+<!--                        <strong>Last Login</strong> {{ user_details.last_login }}-->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

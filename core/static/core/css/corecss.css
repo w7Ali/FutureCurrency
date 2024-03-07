@@ -1,0 +1,59 @@
+/* Font */
+.st-font {
+    font-family: "Satisfy";
+}
+
+/* Set minimum height for container-fluid to 100% */
+html, body {
+    height: 100%;
+}
+
+.container-fluid {
+    min-height: 100%;
+}
+
+/* Service Icon Color */
+.i-color {
+    color: silver;
+}
+
+/* Service Subtitle Color*/
+.ss-color {
+    color: silver;
+}
+
+/* Navigation Link Styles */
+.nav-link {
+    color: whitesmoke;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: black;
+    background-color: #e9cd79;
+}
+
+.nav-link.active {
+    color: black;
+    background-color: #ffc107;
+    font-weight: bold;
+}
+/* Adjust the sidebar height to cover full height */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+/* Align h2 to both ends, remove extra alert classes */
+.container-fluid h2 {
+    text-align: start;
+    text-align: justify;
+    margin: 0;
+}
+
+
+/* Media Query for Print */
+@media not print {
+    .shrinkToFit {
+        width: 100%;
+    }
+}

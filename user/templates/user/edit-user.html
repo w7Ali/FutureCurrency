@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .left-container {
+            flex: 1;
+            background: url('{% static "user/images/edit.jpg" %}') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Position relative for absolute positioning of the card */
+        }
+        .user-card {
+            position: absolute;
+            top: 20px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 200px; /* Adjust the max-width as needed */
+            width: 100%;
+            text-align: center;
+        }
+        .user-card a {
+            text-decoration: none;
+            color: #007bff;
+            cursor: pointer;
+        }
+        .right-container {
+            flex: 1;
+            background-color: #ced4da;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .signup-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+        }
+        .signup-card h2 {
+            text-align: center;
+            color: #343a40;
+        }
+        .signup-card form {
+            margin-top: 20px;
+        }
+        .signup-card .form-group {
+            margin-bottom: 20px;
+        }
+        .signup-card label {
+            font-weight: bold;
+            color: #495057;
+        }
+        .signup-card input[type="text"],
+        .signup-card input[type="password"],
+        .signup-card input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .signup-card input[type="submit"],
+        .signup-card input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup-card input[type="submit"]:hover,
+        .signup-card input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-container">
+        {% if all_user %}
+            <div class="user-card">
+                <h4>All Users</h4>
+                <ul>
+                    {% for user in all_user %}
+                        <li><a href="{% url 'user-detail' user.id %}">{{ user.username }} </a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+    <div class="right-container">
+        <div class="signup-card">
+            <h2>Edit User Profile</h2>
+            <form action="" method="POST" novalidate>
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="form-group">
+                        <label for="{{ field.id_for_label }}">{{ field.label_tag }}</label>
+                        {{ field }}
+                        {% if field.errors %}
+                            <small class="text-danger">{{ field.errors }}</small>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+
+                {% if form.non_field_errors %}
+                    <div class="alert alert-danger" role="alert">
+                        {% for error in form.non_field_errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Save Changes">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

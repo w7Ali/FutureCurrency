@@ -1,0 +1,153 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<style>
+    .details-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .records-list,
+    .details-view {
+        width: 48%;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+
+    .record-item {
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .record-item:hover {
+        background-color: #f0f0f0;
+    }
+</style>
+
+<div class="details-container">
+    <!-- Left Side - Expense List -->
+    <div class="records-list">
+        <h2>Expense List</h2>
+        <form method="post" action="{% url 'delete_expenses' %}" id="delete-expenses-form">
+            {% csrf_token %}
+
+            <div class="mb-3 d-flex justify-content-between">
+                <div>
+                    <input type="checkbox" id="select-expenses-all" aria-labelledby="select-expenses-all-label"
+                           onclick="toggleAllCheckboxes('expenses')" />
+                    <label for="select-expenses-all" id="select-expenses-all-label">Select All</label>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary"
+                            onclick="performMassAction('delete-expenses-form')">Delete Selected Expenses
+                    </button>
+                </div>
+            </div>
+
+            <table id="expenses-table" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for expense in expenses %}
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="selected_items" value="{{ expense.pk }}" />
+                        </td>
+                        <td>{{ expense.name }}</td>
+                        <td>{{ expense.amount }}</td>
+                        <td>{{ expense.category }}</td>
+                        <td>{{ expense.description }}</td>
+                        <td>{{ expense.date }}</td>
+                        <td>
+                            <a href="{% url 'emi_detail' pk=expense.pk %}" class="btn btn-primary btn-sm">Edit</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <a href="{% url 'expense_create' %}" class="btn btn-success">Add Expenses</a>
+        </form>
+    </div>
+
+    <!-- Right Side - EMI List -->
+    <div class="details-view">
+        <h2>EMI List</h2>
+        <form method="post" action="{% url 'delete_emis' %}" id="delete-emis-form">
+            {% csrf_token %}
+
+            <div class="mb-3 d-flex justify-content-between">
+                <div>
+                    <input type="checkbox" id="select-emis-all" aria-labelledby="select-emis-all-label"
+                           onclick="toggleAllCheckboxes('emis')" />
+                    <label for="select-emis-all" id="select-emis-all-label">Select All</label>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary"
+                            onclick="performMassAction('delete-emis-form')">Delete Selected EMIs
+                    </button>
+                </div>
+            </div>
+
+            <table id="emis-table" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">EMI Amount</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for emi in emis %}
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="selected_items" value="{{ emi.pk }}" />
+                        </td>
+                        <td>{{ emi.product_name }}</td>
+                        <td>{{ emi.emi_amount }}</td>
+                        <td>{{ emi.due_date }}</td>
+                        <td>
+                            <a href="{% url 'emi_detail' pk=emi.pk %}" class="btn btn-primary btn-sm">Details</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <a href="{% url 'emi_create' %}" class="btn btn-success">Add New EMI</a>
+        </form>
+    </div>
+</div>
+
+<script>
+    function toggleAllCheckboxes(formId) {
+        const checkboxes = document.getElementsByName(`selected_items`);
+        const selectAllCheckbox = document.getElementById(`select-${formId}-all`);
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = selectAllCheckbox.checked;
+        });
+    }
+
+    function performMassAction(formId) {
+        document.getElementById(formId).submit();
+    }
+
+    $(document).ready(function () {
+        // Initialize DataTable for the Expenses table
+        $('#expenses-table').DataTable();
+
+        // Initialize DataTable for the EMIs table
+        $('#emis-table').DataTable();
+    });
+</script>
+
+{% endblock %}

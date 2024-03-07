@@ -1,0 +1,6 @@
+product_name,down_payment,emi_amount,start_date,due_date,emi_count,interest_percent
+'Laptop','5000.00','1500','2024-02-01','5','12','5.0'
+Mobile Phone,2000.00,800,2024-02-05,10,6,3.5
+Refrigerator,3000.00,1200,2024-02-10,15,8,4.0
+Television,4000.00,1000,2024-02-15,3,5,2.5
+Washing Machine,2500.00,900,2024-02-20,8,7,3.0

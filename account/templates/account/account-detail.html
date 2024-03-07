@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Account Details{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'income/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'income/css/jquery-tables.css' %}">
+<link rel="stylesheet" href="{% static 'income/css/homefinal.css' %}">
+
+<h1 class="mt-4">Account Details</h1>
+
+<div class="button-row" style="margin-top: 20px; display: flex; justify-content: space-between;">
+    <button type="button" class="btn btn-success"><a href="{% url 'account-home'  %}" style="color: white; text-decoration: none;">Account Home</a></button>
+    <button type="button" class="btn btn-primary" onclick="performMassAction()">Delete Selected</button>
+</div>
+
+<div class="container mt-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{accounts.account_name}}
+                </h5>
+                <p class="card-text">Account Number: {{accounts.account_number}}</p>
+                <p class="card-text">Balance: ${{accounts.balance}}</p>
+                <button type="button" class="btn btn-warning" disabled>Edit</button>
+            </div>
+        </div>
+</div>
+
+{% comment %} {{accounts.id}}
+{{accounts.user}}
+{{accounts.account_name}}
+{{accounts.account_number}}
+{{accounts.balance}} {% endcomment %}
+<hr>
+{% for account in allaccount %}
+{{account.name}}
+<li> <a href="{% url 'account-detail' account.id %}">{{account.name}}</a>
+{% endfor %}
+</hr>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/datatables.js' %}"></script>
+<script src="{% static 'income/js/home.js' %}"></script>
+
+{% endblock %}

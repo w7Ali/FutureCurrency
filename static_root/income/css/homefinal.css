@@ -1,0 +1,278 @@
+/* Base Styles */
+body {
+    overflow: enable; /* Enable page scrolling */
+}
+
+/* Container for displaying income records and details */
+.details-container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Container for displaying income records list and details view */
+.records-list-container,
+.details-view {
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+}
+
+.dataTables_wrapper {
+    margin-top: 20px;
+}
+
+/* Record Item Styles */
+.record-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.record-item.selected {
+    background-color: #0a3e11; /* Background color when item is selected */
+}
+
+/* Checkbox Styles */
+.select-checkbox {
+    margin-right: 5px;
+    display: none; /* Initially hide checkboxes */
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+/* Select All Checkbox Container Styles */
+#select-all-container {
+    position: absolute;
+    display: none; /* Initially hide select-all container */
+}
+
+/* Close Edit Button Styles */
+.close-edit-button,
+.transparent-checkbox {
+    display: none; /* Initially hide close edit button and transparent checkboxes */
+}
+
+/* Display count of selected items /* Base Styles */
+body {
+    overflow: enable; /* Enable page scrolling */
+}
+
+/* Container for displaying income records and details */
+.details-container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Container for displaying income records list and details view */
+.records-list-container,
+.details-view {
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+}
+
+.dataTables_wrapper {
+    margin-top: 20px;
+}
+
+/* Record Item Styles */
+.record-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.record-item.selected {
+    background-color: #0a3e11; /* Background color when item is selected */
+}
+
+/* Checkbox Styles */
+.select-checkbox {
+    margin-right: 5px;
+    display: none; /* Initially hide checkboxes */
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+/* Select All Checkbox Container Styles */
+#select-all-container {
+    position: absolute;
+    display: none; /* Initially hide select-all container */
+}
+
+/* Close Edit Button Styles */
+.close-edit-button,
+.transparent-checkbox {
+    display: none; /* Initially hide close edit button and transparent checkboxes */
+}
+
+/* Display count of selected items */
+.count-display {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Button Styles */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.edit-button,
+.close-edit-button,
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #3498db; /* Default button background color */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Button background color on hover */
+}
+
+.edit-button,
+.close-edit-button {
+    margin-right: 10px;
+}
+
+/* Edit Mode Styles */
+.edit-mode .select-checkbox,
+.edit-mode #select-all-container,
+.edit-mode .edit-button {
+    display: inline-block; /* Show checkboxes and edit button in edit mode */
+}
+
+.edit-mode .transparent-checkbox,
+.edit-mode .close-edit-button {
+    display: none; /* Hide transparent checkboxes and close edit button in edit mode */
+}
+
+/* Confirmation Modal Styles */
+.confirmation-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the content of the modal */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for buttons inside the modal */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+*/
+.count-display {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Button Styles */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.edit-button,
+.close-edit-button,
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #3498db; /* Default button background color */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Button background color on hover */
+}
+
+.edit-button,
+.close-edit-button {
+    margin-right: 10px;
+}
+
+/* Edit Mode Styles */
+.edit-mode .select-checkbox,
+.edit-mode #select-all-container,
+.edit-mode .edit-button {
+    display: inline-block; /* Show checkboxes and edit button in edit mode */
+}
+
+.edit-mode .transparent-checkbox,
+.edit-mode .close-edit-button {
+    display: none; /* Hide transparent checkboxes and close edit button in edit mode */
+}
+
+/* Confirmation Modal Styles */
+.confirmation-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the content of the modal */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for buttons inside the modal */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}

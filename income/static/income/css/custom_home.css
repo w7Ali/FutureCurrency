@@ -1,0 +1,113 @@
+body {
+overflow: enable; /* Enable page scrolling */
+}
+
+.details-container {
+display: flex;
+margin: 20px;
+}
+
+.records-list-container,
+.details-view {
+width: 100%;
+max-height: 70vh;
+overflow-y: auto;
+overflow-x: hidden;
+border: 1px solid #ccc;
+padding: 20px;
+position: relative;
+}
+
+
+.dataTables_wrapper {
+margin-top: 20px;
+}
+body {
+overflow: enable; /* Enable page scrolling */
+}
+
+.details-container {
+    display: flex;
+    margin: 20px;
+}
+
+.records-list-container,
+.details-view {
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+}
+
+.record-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.record-item.selected {
+    background-color: #b3daff;
+}
+
+.select-checkbox {
+    margin-right: 5px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+#select-all-container {
+    position: absolute;
+    display: none;
+}
+
+.close-edit-button {
+    display: none;
+}
+
+.transparent-checkbox {
+    visibility: hidden;
+}
+
+.count-display {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.edit-button,
+.close-edit-button {
+    margin-right: 10px;
+}
+
+.edit-mode .select-checkbox,
+.edit-mode .select-all-container,
+.edit-mode #select-all {
+    display: inline-block;.
+}
+
+.edit-mode .transparent-checkbox {
+    display: none;
+}
+
+.edit-mode .edit-button {
+    display: none;
+}
+
+.edit-mode .close-edit-button {
+    display: inline-block;
+}
+     .dataTables_wrapper {
+    margin-top: 20px;

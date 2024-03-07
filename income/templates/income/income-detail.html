@@ -1,0 +1,116 @@
+{% load static %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+    .details-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        border-left: 3px solid #007bff; /* Add vertical line with a modern color */
+        padding-left: 20px; /* Adjust padding for better alignment */
+    }
+    .record-details {
+        width: 48%;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    .record-item {
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .record-item:hover {
+        background-color: #f0f0f0;
+    }
+</style>
+
+{% if allincome.income.id is not None %}
+    <h2>{{ allincome.income.source|title }} Detail</h2>
+{% else %}
+    <h2>Default Source Detail</h2>
+{% endif %}
+
+<div class="details-container">
+
+    <table class="table thead-dark">
+        <tbody>
+            <tr>
+                <td><strong>ID</strong></td>
+                <td>{{ allincome.income.id|default_if_none:"0" }}</td>
+            </tr>
+            <tr>
+                <td><strong>Amount</strong></td>
+                <td>{{ allincome.income.amount }}</td>
+            </tr>
+            <tr>
+                <td><strong>Source</strong></td>
+                <td>{{ allincome.income.source }}</td>
+            </tr>
+            <tr>
+                <td><strong>Description</strong></td>
+                <td>{{ allincome.income.description }}</td>
+            </tr>
+            <tr>
+                <td><strong>Day of Month</strong></td>
+                <td>{{ allincome.income.day_of_month }}</td>
+            </tr>
+
+            {% if allincome.recurring_income %}
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>{{ allincome.recurring_income.get_recurring_type_display }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Day</strong></td>
+                    <td>{{ allincome.recurring_income.recurring_day }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Range</strong></td>
+                    <td>{{ allincome.recurring_income.recurring_range }}</td>
+                </tr>
+            {% endif %}
+
+            {% if allincome.varied_recurring_income %}
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>{{ allincome.varied_recurring_income.variation_type }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Amount</strong></td>
+                    <td>{{ allincome.varied_recurring_income.variation_amount }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Percentage</strong></td>
+                    <td>{{ allincome.varied_recurring_income.variation_percentage }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Period</strong></td>
+                    <td>{{ allincome.varied_recurring_income.variation_period }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Description</strong></td>
+                    <td>{{ allincome.varied_recurring_income.variation_description }}</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+</div>
+<div class="buttons-container">
+    <div>
+        <button type="button" class="btn btn-warning btn-sm"><a href="{% url 'add-all' allincome.income.id|default_if_none:'0'  %}" class="btn-link"><i class="fas fa-edit fa-2x"></i></a></button>
+        <form id="delete-form" method="post"action="{% url 'delete-income' allincome.income.id|default_if_none:'0' %}" onsubmit="return confirmDelete()">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash fa-2x"></i></button>
+        </form>
+    </div>
+</div>
+              
+<script>
+function confirmDelete(event) {
+if (confirm("Are you sure you want to delete this record?")) {
+    return true; // Allow form submission
+} else {
+    event.preventDefault(); // Prevent form submission
+    return false;
+}
+}
+</script>

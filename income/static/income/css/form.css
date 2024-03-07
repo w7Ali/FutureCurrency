@@ -1,0 +1,18 @@
+/* static/css/styles.css */
+
+.custom-input-class {
+    /* Add your custom styles here */
+}
+
+/* You can also leverage Bootstrap classes for specific styling */
+.custom-input-class {
+    padding: 8px; /* Add some padding */
+    border: 1px solid #ced4da; /* Add a border */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+}
+
+/* If you want to change the appearance on focus */
+.custom-input-class:focus {
+    border-color: #80bdff; /* Change border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add a box shadow on focus */
+}

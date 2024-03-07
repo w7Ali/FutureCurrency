@@ -1,0 +1,105 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Income Details{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'income/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'income/css/jquery-tables.css' %}">
+<link rel="stylesheet" href="{% static 'income/css/homefinal.css' %}">
+
+<h1 class="mt-4">Income Details</h1>
+
+<div class="button-row" style="margin-top: 20px; display: flex; justify-content: space-between;">
+  <div>
+    <button type="button" class="btn btn-primary edit-button" onclick="toggleEditMode()">Edit</button>
+    <button type="button" class="btn btn-danger close-edit-button"  onclick="closeEditMode()">Close Edit</button>
+    <div class="count-display">Selected: <span id="selected-count">0</span></div>
+  </div>
+
+  <div>
+    <button type="button" class="btn btn-success"><a href="{% url 'add-all'  %}" style="color: white; text-decoration: none;">Add Income</a></button>
+    <button type="button" class="btn btn-primary" onclick="performMassAction()">Delete Selected</button>
+  </div>
+</div>
+
+<div class="details-container">
+  <form method="post" action="{% url 'mass-action' %}" id="mass-action-form">
+    {% csrf_token %}
+
+    <div class="records-list-container">
+      <div class="button-row">
+        <div>
+          <table class="table records-list">
+            <thead class="thead-dark">
+              <tr>
+                <th id="select-all-container">
+                  <input type="checkbox" id="select-all" onclick="toggleAllCheckboxes()" />
+                </th>
+                <th>Day</th>
+                <th>Source</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% if income_details %}
+                {% for income_detail in income_details %}
+                  <tr class="record-item" onclick="showDetails('{{ income_detail.income.id }}')">
+                    <td class="select-checkbox">
+                      <input type="checkbox" class="select-checkbox" name="selected_items" value="{{ income_detail.income.id }}" />
+                      <input type="checkbox" class="transparent-checkbox" style="visibility: hidden;" />
+                    </td>
+                    <td>{{ income_detail.income.day_of_month }}</td>
+                    <td>{{ income_detail.income.source|title }}</td>
+                    <td>{{ income_detail.income.amount }}</td>
+                  </tr>
+                {% endfor %}
+              {% else %}
+                <tr>
+                  <td colspan="4">No income records found.</td>
+                </tr>
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="details-view" id="details-view"></div>
+</div>
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/datatables.js' %}"></script>
+<script src="{% static 'income/js/home.js' %}"></script>
+
+
+<script>
+  $(document).ready(function () {
+    var table = $('.records-list').DataTable({
+      searching: true,
+      paging: true,
+      ordering: true,
+      order: [[1, 'asc']],  // Initial order by the second column (Day)
+    });
+
+    // Grouping by Day
+    var groupedData = {};
+
+    table.rows().every(function () {
+      var data = this.data();
+      var day = data[1]; // Assuming the day is in the second column
+
+      if (!groupedData[day]) {
+        groupedData[day] = [];
+      }
+
+      groupedData[day].push(data);
+      return true;
+    });
+
+    console.log(groupedData);
+  });
+</script>
+
+{% endblock %}
